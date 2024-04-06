@@ -9,16 +9,40 @@ background-image: linear-gradient(45deg, #C73866, #FE676E, #FD8F52, #FF8D71);
 background-size: 400%;
 animation: bg_animation 20s infinite alternate;
 }
+::-webkit-scrollbar
+{
+    width: 0.6em;
 
+    background-image: linear-gradient(45deg, #FE676E, #FD8F52, #FF8D71);
+background-size:400%;
+animation: live_bg 100s infinite alternate;
+}
+::-webkit-scrollbar-track
+{
+    background: linear-gradient(10deg, #C2956E, #6A6C54); /*#7bb367 */
+    border-radius: 100vw;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #C2956E;
+    border-radius: 100vw;
+    border: 0.1em solid #6A6C54;
+}
+::-webkit-scrollbar-thumb:active
+{
+    background: #424242;
+}
 @keyframes bg_animation
 {
 from
 {
-background-position: left
+background-position: left;
 }
 to
 {
-background-position: right
+background-position: right;
 }
 }
 
@@ -124,6 +148,7 @@ animation: rotAnimationr 10s infinite alternate;
 {
 
 width: 1%;
+font-size: 3rem;
 }
 .dropMenu nav
 {
@@ -134,7 +159,7 @@ position: fixed;
 font-size: 70%;
 font-family: fantasy, serif;
 font-weight: 250;
-color: #F49D1A;
+color: #F5EAEA;
 
 transition: 1s;
 }
@@ -279,6 +304,8 @@ color: #FFBF9B;
 border: 2px solid #9198e5;
 border-radius: 16%;
 padding: 15px;
+padding-left: 30px;
+margin-left: 30px;
 background-image: linear-gradient(180deg, #e66465, #9198e5);
 text-decoration: none;
 }
@@ -339,6 +366,10 @@ padding-left: 10px;
 font-size: 75%;
 }
 
+.clickableRef
+{
+  text-decoration: none;
+}
 
 
 
